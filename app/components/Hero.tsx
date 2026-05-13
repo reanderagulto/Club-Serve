@@ -10,14 +10,12 @@ export default function Hero() {
             data-node-id="2:533"
             data-name="Phone 2 1"
           >
-            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-              <Image
-                alt="Phone mockup showing ClubServe app"
-                src="/phone.svg"
-                fill
-                className="object-cover"
-              />
-            </div>
+            <Image
+              alt="Phone mockup showing ClubServe app"
+              src="/phone.svg"
+              fill
+              className="object-contain"
+            />
           </div>
         </div>
         <div className="hero__hero-caption" data-node-id="2:534">

@@ -10,7 +10,7 @@
   }
 
   &__phone-inner {
-    @apply absolute h-[507.85px] w-[646.469px] right-[38.8px] top-[19.8px];
+    @apply absolute h-[507.85px] w-[646.469px] right-0 top-[19.8px] lg:w-[44.894vw];
   }
 
   &__hero-caption {
