@@ -1,0 +1,24 @@
+.sports-marquee {
+  @apply h-[84px] overflow-clip relative w-full;
+
+  &__inner {
+    @apply absolute content-stretch flex font-semibold gap-[118px] items-center leading-[1.2] not-italic text-[24px] text-center top-[32px] whitespace-nowrap;
+    animation: marquee 30s linear infinite;
+    color: #8e8e93;
+    letter-spacing: -0.1504px;
+  }
+
+  &__item {
+    @apply relative shrink-0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}

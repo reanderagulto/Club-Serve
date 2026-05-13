@@ -1,0 +1,43 @@
+export default function SportsMarquee() {
+  const sports = [
+    "PADEL",
+    "PICKLEBALL",
+    "TENNIS",
+    "BADMINTON",
+    "SQUASH",
+    "YOGA",
+    "PILATES",
+    "BARRE",
+    "INDOOR CYCLING",
+    "HIIT/CROSSFIT",
+    "DANCE",
+    "MARTIALS ARTS",
+    "WELLNESS CLINIC",
+  ];
+
+  return (
+    <div className="sports-marquee" data-node-id="2:354">
+      <div className="sports-marquee__inner" data-node-id="2:355">
+        {sports.map((sport, index) => (
+          <p
+            key={index}
+            className="sports-marquee__item"
+            data-node-id={`2:${356 + index}`}
+          >
+            {sport}
+          </p>
+        ))}
+        {/* Duplicate for seamless loop */}
+        {sports.map((sport, index) => (
+          <p
+            key={`dup-${index}`}
+            className="sports-marquee__item"
+            data-node-id={`2:${369 + index}`}
+          >
+            {sport}
+          </p>
+        ))}
+      </div>
+    </div>
+  );
+}

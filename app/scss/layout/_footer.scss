@@ -1,0 +1,19 @@
+.footer {
+  @apply content-stretch flex font-medium h-[64px] items-center justify-between not-italic overflow-clip px-5 lg:px-20 py-3 relative shrink-0 text-[14px] text-black tracking-[-0.1504px] w-full whitespace-nowrap;
+
+  &__text {
+    @apply relative shrink-0 leading-5;
+  }
+
+  &__link {
+    @apply cursor-pointer underline decoration-solid leading-5;
+  }
+
+  &__actions {
+    @apply content-stretch flex gap-6 items-center justify-end leading-5 relative shrink-0;
+  }
+
+  &__action-item {
+    @apply relative shrink-0;
+  }
+}

@@ -1,0 +1,21 @@
+.page-shell {
+  @apply bg-white content-stretch flex flex-col items-center justify-between relative min-h-screen;
+}
+
+.page-bg {
+  @apply absolute flex items-center justify-center;
+
+  &--left {
+    left: calc(8.33% + 128.07px);
+    top: -169.41px;
+    height: 871.918px;
+    width: 1330.231px;
+  }
+
+  &--right {
+    left: -277px;
+    top: 194px;
+    height: 654.977px;
+    width: 593.909px;
+  }
+}

@@ -1,0 +1,51 @@
+.hero {
+  @apply content-stretch flex flex-col lg:flex-row gap-14 items-center justify-center relative shrink-0 px-4 lg:px-0 lg:py-[53px];
+
+  &__visual {
+    @apply content-stretch flex flex-col gap-3 h-[669px] items-center relative shrink-0;
+  }
+
+  &__phone {
+    @apply relative shrink-0 h-[527px] w-[493px];
+  }
+
+  &__phone-inner {
+    @apply absolute h-[507.85px] w-[646.469px] right-[38.8px] top-[19.8px];
+  }
+
+  &__hero-caption {
+    @apply content-stretch flex flex-col gap-3 h-[152px] items-center p-8 relative shrink-0 w-[345px] lg:w-[345px] md:w-[280px] sm:w-[250px];
+  }
+
+  &__info {
+    @apply content-stretch flex flex-col gap-[72px] items-center relative shrink-0 w-full lg:w-[643px] px-4 lg:px-0;
+  }
+
+  &__copy {
+    @apply content-stretch flex flex-col items-start relative shrink-0 w-full text-center;
+  }
+
+  &__headline {
+    @apply font-semibold relative shrink-0 text-black w-full text-[48px];
+
+    @media (min-width: 768px) {
+      @apply text-[56px];
+    }
+
+    @media (min-width: 1024px) {
+      @apply text-[64px];
+    }
+  }
+
+  &__subtitle {
+    @apply font-normal relative shrink-0 text-black w-full text-[24px];
+  }
+
+  &__cta {
+    @apply bg-black flex gap-2.5 h-[44px] items-center justify-center px-4 py-2.5 relative rounded-2xl shrink-0 cursor-pointer;
+  }
+
+  &__cta-text {
+    @apply font-medium leading-5 text-[18px] text-white whitespace-nowrap;
+  }
+}
