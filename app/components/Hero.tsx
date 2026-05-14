@@ -1,6 +1,10 @@
 import Image from "next/image";
 
-export default function Hero() {
+interface HeroProps {
+  onOpenModal?: () => void;
+}
+
+export default function Hero({ onOpenModal }: HeroProps) {
   return (
     <div className="hero" data-node-id="2:530">
       <div className="hero__visual" data-node-id="2:531">
@@ -12,7 +16,7 @@ export default function Hero() {
           >
             <Image
               alt="Phone mockup showing ClubServe app"
-              src="/phone.svg"
+              src="/svg/phone.svg"
               fill
               className="object-contain"
             />
@@ -35,7 +39,7 @@ export default function Hero() {
             >
               <Image
                 alt="App Store"
-                src="/apple-store.png"
+                src="/images/apple-store.png"
                 width={107}
                 height={28}
               />
@@ -47,7 +51,7 @@ export default function Hero() {
             >
               <Image
                 alt="Google Play"
-                src="/google-play.png"
+                src="/images/google-play.png"
                 width={142}
                 height={28}
               />
@@ -72,7 +76,12 @@ export default function Hero() {
             </p>
           </div>
         </div>
-        <button className="hero__cta" data-node-id="2:561" data-name="CTA">
+        <button
+          className="hero__cta"
+          data-node-id="2:561"
+          data-name="CTA"
+          onClick={onOpenModal}
+        >
           <p className="hero__cta-text" data-node-id="I2:561;57:1899">
             Become a partner
           </p>

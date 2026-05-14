@@ -1,0 +1,9 @@
+.modal-overlay {
+  @apply fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4;
+}
+
+.modal-content {
+  @apply bg-white rounded-[16px] shadow-2xl max-w-lg mx-auto;
+  max-height: 90vh;
+  overflow-y: auto;
+}
