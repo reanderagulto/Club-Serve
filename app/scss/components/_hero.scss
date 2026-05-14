@@ -1,24 +1,41 @@
 .hero {
-  @apply content-stretch flex flex-col lg:flex-row gap-14 items-center justify-center relative shrink-0 px-4 lg:px-0 lg:py-[53px];
+  @apply relative flex-col-reverse gap-[30px] flex items-center max-w-full justify-center mx-[auto] px-4 pt-[104px] pb-[48px] 
+         lg:flex-row lg:px-0 lg:pt-[117px] lg:pb-[53px] lg:max-w-[calc(100%_-_128px)]
+         xl:max-w-[1092px] 
+         2xl:max-w-[1194px] 2xl:gap-[58px];
 
   &__visual {
-    @apply content-stretch flex flex-col gap-3 h-[669px] items-center relative shrink-0;
+    @apply content-stretch flex flex-col gap-3 items-center relative shrink-0 
+           lg:w-[41.28%];
   }
 
   &__phone {
-    @apply relative shrink-0 h-[527px] w-[493px];
+    @apply relative shrink-0 w-[306px] max-w-[306px] h-[280.968px] mx-auto
+           md:h-[343.823px]
+           lg:h-[388.786px]
+           xl:h-[507.85px];
   }
 
   &__phone-inner {
-    @apply absolute h-[507.85px] w-[646.469px] right-[38.8px] top-[19.8px];
+    @apply absolute w-full top-[19.8px] -left-[15%] h-[280.968px]
+           md:h-[343.823px]
+           lg:w-[44.894vw] lg:h-[388.786px] lg:-left-[148.09px]
+           xl:h-[507.85px] xl:-left-[max(20.047vw,_231.07px)];
   }
 
   &__hero-caption {
-    @apply content-stretch flex flex-col gap-3 h-[152px] items-center p-8 relative shrink-0 w-[345px] lg:w-[345px] md:w-[280px] sm:w-[250px];
+    @apply content-stretch flex flex-col gap-3 h-[152px] items-center p-8 relative shrink-0 w-[345px]
+           sm:w-[250px]
+           md:w-[280px] 
+           lg:w-[345px]
+           2xl:w-[345px];
   }
 
   &__info {
-    @apply content-stretch flex flex-col gap-[72px] items-center relative shrink-0 w-full lg:w-[643px] px-4 lg:px-0;
+    @apply content-stretch flex flex-col items-center relative shrink-0 flex-grow-1 w-full px-4 lg:px-0 gap-[48px]
+           md:gap-[30px]
+           lg:w-[calc(53.85%_-_72px)] lg:gap-[72px]
+           xl:flex-shrink-1;
   }
 
   &__copy {
@@ -26,19 +43,15 @@
   }
 
   &__headline {
-    @apply font-semibold relative shrink-0 text-black w-full text-[48px];
-
-    @media (min-width: 768px) {
-      @apply text-[56px];
-    }
-
-    @media (min-width: 1024px) {
-      @apply text-[64px];
-    }
+    @apply font-semibold relative shrink-0 text-black w-full text-[38px] 
+           lg:text-[54px] 
+           xl:text-[64px] 
+           2xl:text-[72px];
   }
 
   &__subtitle {
-    @apply font-normal relative shrink-0 text-black w-full text-[24px];
+    @apply font-normal relative shrink-0 text-black w-full text-[20px] 
+           2xl:text-[28px];
   }
 
   &__cta {

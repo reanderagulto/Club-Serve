@@ -11,6 +11,10 @@
   &__item {
     @apply relative shrink-0;
   }
+
+  &--paused &__inner {
+    animation-play-state: paused;
+  }
 }
 
 @keyframes marquee {
