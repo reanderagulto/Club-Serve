@@ -19,16 +19,21 @@ export async function POST(request: NextRequest) {
     const cached = await redis.get(cacheKey);
     if (cached) {
       return NextResponse.json(
-        { error: "Please wait before submitting again" },
-        { status: 429 },
+        { error: "Please wait a moment before submitting again" },
+        {
+          status: 429,
+          headers: {
+            "Retry-After": "60",
+          },
+        },
       );
     }
 
     // Submit to Formstack
     const result = await submitToFormstack(body);
 
-    // Cache the submission for 5 minutes
-    await redis.setex(cacheKey, 300, "submitted");
+    // Cache the submission for 1 minute to avoid repeated test-submits
+    await redis.setex(cacheKey, 60, "submitted");
 
     return NextResponse.json({ success: true, data: result });
   } catch (error) {

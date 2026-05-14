@@ -1,4 +1,8 @@
-export default function SportsMarquee() {
+interface SportsMarqueeProps {
+  paused?: boolean;
+}
+
+export default function SportsMarquee({ paused = false }: SportsMarqueeProps) {
   const sports = [
     "PADEL",
     "PICKLEBALL",
@@ -16,7 +20,10 @@ export default function SportsMarquee() {
   ];
 
   return (
-    <div className="sports-marquee" data-node-id="2:354">
+    <div
+      className={`sports-marquee ${paused ? "sports-marquee--paused" : ""}`}
+      data-node-id="2:354"
+    >
       <div className="sports-marquee__inner" data-node-id="2:355">
         {sports.map((sport, index) => (
           <p

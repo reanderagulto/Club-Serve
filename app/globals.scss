@@ -1,4 +1,7 @@
-@use "./scss/index" as *;
+// Tailwind CSS
+@use "tailwindcss";
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-@import "tailwindcss";
+@use "scss/tailwind/tokens";
+@use "scss/tailwind/utilities";
+
+@use "./scss/index" as *;
