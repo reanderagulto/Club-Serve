@@ -8,7 +8,6 @@ A modern, responsive, and SEO-friendly marketing website for ClubServe, built wi
 - **TypeScript** for type safety
 - **TailwindCSS v4** for styling with custom container max-width
 - **SCSS** for component-specific styling
-- **Redis** caching integration with rate limiting
 - **Formstack API** for secure form submissions
 - **International Phone Input** with intl-tel-input library (Philippines default)
 - **Modal Lead Form** with body scroll lock and marquee pause
@@ -21,7 +20,6 @@ A modern, responsive, and SEO-friendly marketing website for ClubServe, built wi
 - Framework: Next.js 16
 - Language: TypeScript
 - Styling: TailwindCSS v4 + SCSS
-- Caching: Redis (ioredis)
 - Forms: Formstack API v2
 - Phone Input: intl-tel-input
 - Fonts: Inter (Google Fonts)
@@ -32,7 +30,6 @@ A modern, responsive, and SEO-friendly marketing website for ClubServe, built wi
 
 - Node.js 18+
 - npm or yarn
-- Redis server (for caching)
 
 ### Installation
 
@@ -47,7 +44,6 @@ A modern, responsive, and SEO-friendly marketing website for ClubServe, built wi
    Create `.env.local` file:
 
    ```env
-   REDIS_URL=redis://localhost:6379
    FORMSTACK_API_URL=https://www.formstack.com/api/v2
    FORMSTACK_ACCESS_TOKEN=your_formstack_access_token
    FORMSTACK_FORM_ID=your_form_id
@@ -94,7 +90,6 @@ app/
         └── _index.scss
 lib/
 ├── formstack.ts              # Optimized Formstack API client
-└── redis.ts                  # Redis client for caching
 public/
 ├── intlTelInputUtils.js      # intl-tel-input utils script
 └── ...                       # Other static assets
@@ -134,11 +129,9 @@ public/
 
 ## Performance
 
-- Redis caching for API responses
 - Lazy loading of images
 - Code splitting
 - Optimized form submission with rate limiting
-- Code splitting
 - Optimized fonts and assets
 
 ## Deployment
@@ -156,7 +149,6 @@ vercel
 
 | Variable               | Description            | Required |
 | ---------------------- | ---------------------- | -------- |
-| REDIS_URL              | Redis connection URL   | Yes      |
 | FORMSTACK_API_URL      | Formstack API base URL | Yes      |
 | FORMSTACK_ACCESS_TOKEN | Formstack access token | Yes      |
 | FORMSTACK_FORM_ID      | Formstack form ID      | Yes      |

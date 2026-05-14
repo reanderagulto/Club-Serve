@@ -3,19 +3,19 @@
 }
 
 .page-bg {
-  @apply absolute flex items-center justify-center;
+  @apply absolute overflow-hidden w-full h-full top-0 left-0 right-0 bottom-0;
+  content: "";
 
   &--left {
-    left: calc(8.33% + 128.07px);
-    top: -169.41px;
-    height: 871.918px;
-    width: 1330.231px;
+    @apply absolute rotate-[22.259deg] 
+           md:w-[339.868px] md:h-[420.588px] md:-left-[131.84px] md:top-[calc(50%_-_89.92px)]
+           lg:w-[422.912px] lg:h-[534.619px] lg:-left-[224px] lg:top-[134px] lg:blur-[13.1px]
+           2xl:w-[422.912px] 2xl:h-[534.619px] 2xl:left-[max(-4.81vw,_-69.27px)] 2xl:top-[max(8.944vw,_128.8px)];
   }
 
   &--right {
-    left: -277px;
-    top: 194px;
-    height: 654.977px;
-    width: 593.909px;
+    @apply absolute rotate-[-18.13deg] blur-[40px] 
+           lg:w-[1231.327px] lg:h-[514.295px] lg:-right-[275.3px] lg:-top-[10.001px]
+           2xl:w-[1231.327px] 2xl:h-[514.295px] 2xl:-right-[169.411px] 2xl:-top-[138.3px];
   }
 }

@@ -58,9 +58,6 @@ export async function submitToFormstack(data: FormSubmission) {
         },
       },
     );
-
-    console.log("Formstack response:", response.data);
-
     return response.data;
   } catch (error: unknown) {
     if (axios.isAxiosError(error)) {
