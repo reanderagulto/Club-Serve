@@ -210,7 +210,7 @@ export default function LeadForm({ onClose }: { onClose: () => void }) {
                 type="text"
                 name="name"
                 className="lead-form__input"
-                placeholder="Input"
+                placeholder="Your Name"
                 value={formData.name}
                 onChange={handleInputChange}
                 required
@@ -219,13 +219,13 @@ export default function LeadForm({ onClose }: { onClose: () => void }) {
             </div>
             <div className="lead-form__field" data-node-id="2:721">
               <label className="lead-form__label" data-node-id="I2:721;30:1187">
-                Business name
+                Company
               </label>
               <input
                 type="text"
                 name="businessName"
                 className="lead-form__input"
-                placeholder="Owner / Manager"
+                placeholder="Business name"
                 value={formData.businessName}
                 onChange={handleInputChange}
                 required
@@ -250,10 +250,13 @@ export default function LeadForm({ onClose }: { onClose: () => void }) {
                 data-node-id="I2:723;35:1672;30:1185"
               >
                 <option value="">Choose</option>
-                <option value="gym">Gym</option>
-                <option value="studio">Studio</option>
-                <option value="sports-club">Sports Club</option>
-                <option value="wellness">Wellness</option>
+                <option value="Racket sports">Racket sports</option>
+                <option value="Gym/Fitness">Gym/Fitness</option>
+                <option value="Yoga/Pilates">Yoga/Pilates</option>
+                <option value="Wellness/Spa">Wellness/Spa</option>
+                <option value="Others">
+                  Other (specify in message box below)
+                </option>
               </select>
             </div>
             <div className="lead-form__field" data-node-id="2:726">
