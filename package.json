@@ -6,7 +6,10 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "export": "next build && next export",
+    "deploy": "wrangler deploy --compatible-date 2024-12-18",
+    "deploy:prod": "npm run build && wrangler deploy --env production"
   },
   "dependencies": {
     "axios": "^1.16.0",
@@ -17,6 +20,7 @@
     "react-dom": "19.2.4"
   },
   "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250102.0",
     "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
@@ -25,6 +29,7 @@
     "eslint-config-next": "16.2.6",
     "sass": "^1.87.0",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "wrangler": "^3.72.0"
   }
 }
