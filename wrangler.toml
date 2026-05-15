@@ -1,4 +1,8 @@
 name = "clubserve"
+
+compatibility_date = "2026-05-15"
+pages_build_output_dir = "./out"
+
 type = "javascript"
 main = "functions/submit-form.ts"
 account_id = "" # Add your Cloudflare account ID
