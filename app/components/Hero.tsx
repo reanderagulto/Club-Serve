@@ -83,7 +83,7 @@ export default function Hero({ onOpenModal }: HeroProps) {
           onClick={onOpenModal}
         >
           <p className="hero__cta-text" data-node-id="I2:561;57:1899">
-            Become a partner
+            List my club
           </p>
           <div
             className="overflow-clip relative shrink-0 w-6 h-6"

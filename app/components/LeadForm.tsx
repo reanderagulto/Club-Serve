@@ -188,7 +188,7 @@ export default function LeadForm({ onClose }: { onClose: () => void }) {
         </div>
         <div data-node-id="2:714">
           <p className="lead-form__title" data-node-id="2:715">
-            Interested in ClubServe For Your Business?
+            Get Your Club in the Game
           </p>
           <p className="lead-form__subtitle" data-node-id="2:716">
             Inquire to learn more about our features & advantages.
