@@ -1,0 +1,13 @@
+name = "clubserve-api"
+
+main = "src/submit-form.ts"
+
+compatibility_date = "2026-05-15"
+
+routes = [
+  { pattern = "clubserve.app/api/submit-form", zone_name = "clubserve.com" }
+]
+
+[vars]
+FORMSTACK_API_URL = "https://www.formstack.com/api/v2"
+FORMSTACK_FORM_ID = "YOUR_FORM_ID"
