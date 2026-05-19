@@ -12,20 +12,6 @@ export default function Header() {
               fill
             />
           </div>
-          <div
-            className="content-stretch flex gap-6 items-center justify-end relative shrink-0"
-            data-node-id="2:525"
-          >
-            <button
-              className="header__button"
-              data-node-id="2:527"
-              data-name="Button-Secondary"
-            >
-              <p className="header__button-text" data-node-id="I2:527;384:4023">
-                Login
-              </p>
-            </button>
-          </div>
         </div>
       </div>
     </header>
