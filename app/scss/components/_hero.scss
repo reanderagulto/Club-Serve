@@ -44,9 +44,8 @@
 
   &__headline {
     @apply font-semibold relative shrink-0 text-black w-full text-[38px] 
-           lg:text-[54px] 
-           xl:text-[64px] 
-           2xl:text-[72px];
+           xl:text-[54px] 
+           2xl:text-[64px];
   }
 
   &__subtitle {

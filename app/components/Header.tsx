@@ -4,11 +4,11 @@ export default function Header() {
   return (
     <header>
       <div className="container">
-        <div className="header" data-node-id="2:523" data-name="header">
-          <div className="header__logo" data-node-id="2:524" data-name="Logo">
+        <div className="header">
+          <div className="header__logo">
             <Image
               alt="ClubServe Logo"
-              src="/svg/clubserve-logo.svg" // Placeholder, replace with actual logo
+              src="/marketing/clubserve-logo.svg" // Placeholder, replace with actual logo
               fill
             />
           </div>

@@ -1,5 +1,8 @@
 .footer {
-  @apply content-stretch flex flex-wrap font-medium h-[64px] items-center justify-between not-italic overflow-clip px-5 lg:px-20 py-3 relative shrink-0 text-[14px] text-black tracking-[-0.1504px] w-full whitespace-nowrap;
+  @apply content-stretch flex flex-wrap font-medium h-[64px] items-center not-italic justify-center overflow-clip px-5 pt-3 pb-[40px] lg:px-20 relative shrink-0 text-[14px] text-black tracking-[-0.1504px] w-full whitespace-nowrap gap-[18px]
+    md:flex-row 
+    md:justify-between
+    md:py-3;
 
   &__text {
     @apply relative shrink-0 leading-5;

@@ -1,8 +1,8 @@
 export default function Footer() {
   return (
     <footer className="container">
-      <div className="footer" data-node-id="2:563" data-name="header">
-        <p className="footer__text" data-node-id="2:564">
+      <div className="footer">
+        <p className="footer__text">
           <span>©2026 ClubServe, a service provided by </span>
           <a
             className="footer__link"
@@ -14,13 +14,9 @@ export default function Footer() {
           </a>
           <span>. All rights reserved.</span>
         </p>
-        <div className="footer__actions" data-node-id="2:565">
-          <p className="footer__action-item" data-node-id="2:566">
-            Terms & Conditions
-          </p>
-          <p className="footer__action-item" data-node-id="2:567">
-            Privacy Policy
-          </p>
+        <div className="footer__actions">
+          <p className="footer__action-item">Terms & Conditions</p>
+          <p className="footer__action-item">Privacy Policy</p>
         </div>
       </div>
     </footer>

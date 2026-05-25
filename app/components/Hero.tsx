@@ -6,52 +6,35 @@ interface HeroProps {
 
 export default function Hero({ onOpenModal }: HeroProps) {
   return (
-    <div className="hero" data-node-id="2:530">
-      <div className="hero__visual" data-node-id="2:531">
-        <div className="hero__phone" data-node-id="2:532" data-name="image">
-          <div
-            className="hero__phone-inner"
-            data-node-id="2:533"
-            data-name="Phone 2 1"
-          >
+    <div className="hero">
+      <div className="hero__visual">
+        <div className="hero__phone">
+          <div className="hero__phone-inner">
             <Image
               alt="Phone mockup showing ClubServe app"
-              src="/svg/phone.svg"
+              src="/marketing/iphone.svg"
               fill
               className="object-contain"
             />
           </div>
         </div>
-        <div className="hero__hero-caption" data-node-id="2:534">
-          <p
-            className="font-semibold leading-normal min-w-full text-center text-[24.087px] text-black tracking-[-0.7226px] w-fit"
-            data-node-id="2:535"
-          >
+        <div className="hero__hero-caption">
+          <p className="font-semibold leading-normal min-w-full text-center text-[24.087px] text-black tracking-[-0.7226px] w-fit">
             COMING SOON
           </p>
-          <div
-            className="content-stretch flex gap-8 h-7 items-center relative shrink-0"
-            data-node-id="2:536"
-          >
-            <div
-              className="h-7 relative shrink-0 w-[107px]"
-              data-node-id="2:537"
-            >
+          <div className="content-stretch flex gap-8 h-7 items-center relative shrink-0">
+            <div className="h-7 relative shrink-0 w-[107px]">
               <Image
                 alt="App Store"
-                src="/images/apple-store.png"
+                src="/marketing/apple-store.png"
                 width={107}
                 height={28}
               />
             </div>
-            <div
-              className="h-7 overflow-clip relative shrink-0 w-[142px]"
-              data-node-id="2:548"
-              data-name="Google_Play_2022_logo 1"
-            >
+            <div className="h-7 overflow-clip relative shrink-0 w-[142px]">
               <Image
                 alt="Google Play"
-                src="/images/google-play.png"
+                src="/marketing/google-play.png"
                 width={142}
                 height={28}
               />
@@ -59,37 +42,22 @@ export default function Hero({ onOpenModal }: HeroProps) {
           </div>
         </div>
       </div>
-      <div className="hero__info" data-node-id="2:556" data-name="hero copy">
-        <div className="hero__copy" data-node-id="2:557" data-name="top">
-          <div
-            className="content-stretch flex flex-col gap-8 items-start leading-[1.2] not-italic relative shrink-0 text-black w-full"
-            data-node-id="2:558"
-            data-name="hero copy"
-          >
-            <p className="hero__headline" data-node-id="2:559">
-              Your gateway to Asia's best fitness & wellness spaces
+      <div className="hero__info">
+        <div className="hero__copy">
+          <div className="content-stretch flex flex-col gap-8 items-start leading-[1.2] not-italic relative shrink-0 text-black w-full">
+            <p className="hero__headline">
+              Your gateway to Asia&apos;s best fitness & wellness spaces
             </p>
-            <p className="hero__subtitle" data-node-id="2:560">
+            <p className="hero__subtitle">
               Find top-rated sports clubs, gyms, studios, and wellness
               destinations across Asia — all in one easy-to-use app built for
               active lifestyles.
             </p>
           </div>
         </div>
-        <button
-          className="hero__cta"
-          data-node-id="2:561"
-          data-name="CTA"
-          onClick={onOpenModal}
-        >
-          <p className="hero__cta-text" data-node-id="I2:561;57:1899">
-            List my club
-          </p>
-          <div
-            className="overflow-clip relative shrink-0 w-6 h-6"
-            data-node-id="I2:561;57:1900"
-            data-name="Arrow / Arrow Up_Right_LG"
-          >
+        <button className="hero__cta" onClick={onOpenModal}>
+          <p className="hero__cta-text">Become a partner</p>
+          <div className="overflow-clip relative shrink-0 w-6 h-6">
             <svg
               width="24"
               height="24"
