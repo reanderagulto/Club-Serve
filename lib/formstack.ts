@@ -1,5 +1,3 @@
-import axios from "axios";
-
 const FORMSTACK_API_URL = process.env.FORMSTACK_API_URL;
 const FORMSTACK_ACCESS_TOKEN = process.env.FORMSTACK_ACCESS_TOKEN;
 const FORMSTACK_FORM_ID = process.env.FORMSTACK_FORM_ID;
@@ -22,6 +20,17 @@ export interface FormSubmission {
   email: string;
   mobileNumber: string;
   message?: string;
+}
+
+class FormstackError extends Error {
+  constructor(
+    message: string,
+    public readonly status: number,
+    public readonly details: unknown,
+  ) {
+    super(message);
+    this.name = "FormstackError";
+  }
 }
 
 export async function submitToFormstack(data: FormSubmission) {
@@ -48,20 +57,31 @@ export async function submitToFormstack(data: FormSubmission) {
       formData.append(`field_${id}`, value);
     }
 
-    const response = await axios.post(
+    const response = await fetch(
       `${FORMSTACK_API_URL}/form/${FORMSTACK_FORM_ID}/submission.json`,
-      formData,
       {
+        method: "POST",
         headers: {
           Authorization: `Bearer ${FORMSTACK_ACCESS_TOKEN}`,
-          // FormData automatically sets Content-Type to multipart/form-data
         },
+        body: formData,
       },
     );
-    return response.data;
+
+    const responseBody = await response.json().catch(() => null);
+
+    if (!response.ok) {
+      throw new FormstackError(
+        `Formstack submission failed with status ${response.status}`,
+        response.status,
+        responseBody,
+      );
+    }
+
+    return responseBody;
   } catch (error: unknown) {
-    if (axios.isAxiosError(error)) {
-      console.error("Formstack error:", error.response?.data);
+    if (error instanceof FormstackError) {
+      console.error("Formstack error:", error.details);
     } else {
       console.error(error);
     }
