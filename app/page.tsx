@@ -24,28 +24,28 @@ export default function Home() {
       <div className="page-bg">
         <Image
           alt="Graphics Left"
-          src="/images/gradient-left.png"
+          src="/marketing/gradient-left.png"
           className="page-bg--left large"
           width={422.912}
           height={534.619}
         />
         <Image
           alt="Graphics Right"
-          src="/images/gradient-right.png"
+          src="/marketing/gradient-right.png"
           className="page-bg--right large"
           width={1231.327}
           height={514.295}
         />
         <Image
           alt="Graphics Left"
-          src="/images/gradient-left-sm.png"
+          src="/marketing/gradient-left-sm.png"
           className="page-bg--left small"
           width={422.912}
           height={534.619}
         />
         <Image
           alt="Graphics Right"
-          src="/images/gradient-right-sm.png"
+          src="/marketing/gradient-right-sm.png"
           className="page-bg--right small"
           width={1231.327}
           height={514.295}
