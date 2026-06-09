@@ -124,7 +124,7 @@ export default function LeadForm({ onClose }: { onClose: () => void }) {
       <div className="lead-form">
         <div className="lead-form__header">
           <div className="lead-form__logo">
-            <img src="/svg/clubserve-logo-white.svg" alt="ClubServe" />
+            <img src="/marketing/clubserve-logo-white.svg" alt="ClubServe" />
           </div>
           <div>
             <p className="lead-form__title">Thank you for your inquiry!</p>
@@ -181,7 +181,7 @@ export default function LeadForm({ onClose }: { onClose: () => void }) {
     <div className="lead-form">
       <div className="lead-form__header">
         <div className="lead-form__logo">
-          <img src="/marketing-svg/clubserve-logo-white.svg" alt="ClubServe" />
+          <img src="/marketing/clubserve-logo-white.svg" alt="ClubServe" />
         </div>
         <div>
           <p className="lead-form__title">Get Your Club in the Game</p>
